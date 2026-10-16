@@ -1,0 +1,15 @@
+# Python / IDE
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+
+# Credentials / Environment
+.env
+
+# Data files & Dumps
+data/
+*.csv
+*.sql
