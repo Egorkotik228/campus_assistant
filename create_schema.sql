@@ -86,3 +86,8 @@ CREATE TABLE public.fact_lessons (
     is_session BOOLEAN NOT NULL DEFAULT FALSE
 );
 
+
+CREATE INDEX IF NOT EXISTS idx_fact_lessons_group ON public.fact_lessons(group_name);
+CREATE INDEX IF NOT EXISTS idx_fact_lessons_teacher ON public.fact_lessons(teacher_id);
+CREATE INDEX IF NOT EXISTS idx_fact_lessons_subject ON public.fact_lessons(subject_id);
+CREATE INDEX IF NOT EXISTS idx_fact_lessons_weekday ON public.fact_lessons(weekday_no_or_exam_date);
